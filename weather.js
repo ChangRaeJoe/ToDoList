@@ -36,11 +36,10 @@ function handleGeoSuccess(pos){
         longitude
     };
 
-    //��ġ ����
+    //current position
     saveCoords(coord);
-    //������ü�� api��û
+    //load
     getWeather(latitude, longitude);
-    //������ ������ ����
 }
 
 function handleGeoError(){
@@ -61,8 +60,9 @@ function loadCoords(){
     }
 }
 
-init();
 function init(){
     console.log("hello weather");
     loadCoords();
 }
+
+init();
