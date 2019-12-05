@@ -1,0 +1,80 @@
+
+body{
+    background: darkkhaki;
+}
+
+#miniTitle{
+    background: palegreen;
+}
+
+.form,
+.greetings {
+    display: none;
+}
+
+.showing{
+    display: block;
+}
+
+
+@keyframes fadnIn{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+}
+
+.bgImage{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: fadnIn 1.0s linear;
+}
+
+.align{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text{
+    text-align: center;
+     color:#c8d6e5;
+}
+
+.cs-textList{
+    color:#c8d6e5;
+    background-color: rgba(139, 0, 0, 0.459);
+    border-radius: 10px;
+    margin: 3px 3px;
+    padding-right: 10px;
+    width: fit-content;
+}
+
+h1{
+    font-size: 60px;
+    text-shadow: 3px 3px 20px rgb(192, 66, 21);
+}
+
+h4{
+    font-size: 25px;
+    
+    text-shadow: 3px 3px 20px rgb(192, 66, 21);
+}
+
+.cs-button{
+    background: none;
+    stroke: none;
+    border:none;
+}
+
+.cs-toDoList{
+    margin:0px;
+    padding:0px;
+    list-style-type: square;
+}
